@@ -2,6 +2,7 @@ package testBase;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import pageObjects.PageSetup;
 
 import java.io.IOException;
 
@@ -17,6 +18,9 @@ public class TestBase {
             System.setProperty("webdriver.chrome.driver", "./../pianoautomation//src//test//java//webDrivers//ChromeDriver//chromedriver.exe");
             wdriver = new ChromeDriver();
         }
+        PageSetup ps = new PageSetup(wdriver);
+
+        ps.loadPage("https://virtualpiano.net/");
     }
 
     public static void webTearDown() {

@@ -4,6 +4,7 @@ import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import pageObjects.Keyboard;
+import pageObjects.PageSetup;
 import testBase.TestBase;
 
 public class FirstSong extends TestBase {
@@ -19,10 +20,13 @@ public class FirstSong extends TestBase {
     }
 
     @Test
-    public void firstSong(){
+    public void firstSong() throws InterruptedException {
         Keyboard kb = new Keyboard(wdriver);
 
-        kb.pressFirstNote()
-                .pressSecondNote();
+        Thread.sleep(5000);
+        kb.pressFirstNote();
+        Thread.sleep(1000);
+        kb.pressSecondNote();
+        Thread.sleep(5000);
     }
 }
