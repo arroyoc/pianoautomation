@@ -24,9 +24,19 @@ public class FirstSong extends TestBase {
         Keyboard kb = new Keyboard(wdriver);
 
         Thread.sleep(5000);
-        kb.pressFirstNote();
+        kb.pressThreeC();
         Thread.sleep(1000);
-        kb.pressSecondNote();
+        kb.pressThreeC();
+        Thread.sleep(1000);
+        kb.pressThreeG();
+        Thread.sleep(1000);
+        kb.pressThreeG();
+        Thread.sleep(1000);
+        kb.pressFourA();
+        Thread.sleep(1000);
+        kb.pressFourA();
+        Thread.sleep(1000);
+        kb.pressThreeG();
         Thread.sleep(5000);
     }
 }
