@@ -14,7 +14,7 @@ public class TestBase {
         // Check if web driver has already been instantiated
         // Driver options are 'PhantomJSDriver', 'ChromeDriver', 'FireFoxDriver'
         if (wdriver == null) {
-            System.setProperty("webdriver.chrome.driver", "./../QA-SmallStore//src//test//java//webDrivers//ChromeDriver//chromedriver.exe");
+            System.setProperty("webdriver.chrome.driver", "./../pianoautomation//src//test//java//webDrivers//ChromeDriver//chromedriver.exe");
             wdriver = new ChromeDriver();
         }
     }
