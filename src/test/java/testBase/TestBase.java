@@ -18,4 +18,9 @@ public class TestBase {
             wdriver = new ChromeDriver();
         }
     }
+
+    public static void webTearDown() {
+        wdriver.quit();
+        wdriver = null;
+    }
 }
